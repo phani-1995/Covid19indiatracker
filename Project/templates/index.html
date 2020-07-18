@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid 19 tracker</title>
+</head>
+<body>
+    <h1>Corona tracker</h1>
+    <h2>Select your countries</h2>
+    <form action="/" method="post">
+        <select id="country", name="country">
+            <option value="IND">India</option>
+            <option value="AUS">Australia</option>
+            <option value="DEU">Germany</option>
+            <option selected value="FRA">France</option>
+            <option value="ITA">Italy</option>
+            <option value="ESP">Spain</option>
+            <option value="USA">USA</option>
+            <option value="KOR">South Korea</option>
+            <option value="JPN">Japan</option>
+        </select>
+        <select id="country2", name="country2">
+            <option value="IND">India</option>
+            <option value="AUS">Australia</option>
+            <option value="DEU">Germany</option>
+            <option value="FRA">France</option>
+            <option selected value="ITA">Italy</option>
+            <option value="ESP">Spain</option>
+            <option value="USA">USA</option>
+            <option value="KOR">South Korea</option>
+            <option value="JPN">Japan</option>
+        </select>
+        <select id="country3", name="country3">
+            <option value="IND">India</option>
+            <option value="AUS">Australia</option>
+            <option value="DEU">Germany</option>
+            <option value="FRA">France</option>
+            <option value="ITA">Italy</option>
+            <option selected value="ESP">Spain</option>
+            <option value="USA">USA</option>
+            <option value="KOR">South Korea</option>
+            <option value="JPN">Japan</option>
+        </select>
+        <input type="submit" value="submit"/>
+
+    </form>
+
+    <h1>Total Cases</h1>
+    <div style="position:relative; height:40vh; width:80vw">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <h1>Total Deaths</h1>
+    <div style="position:relative; height:40vh; width:80vw">
+        <canvas id="myChart1" width="400" height="400"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</body>
+    <script src="../static/main.js"></script>
+</html>
